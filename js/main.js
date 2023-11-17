@@ -27,13 +27,16 @@ createApp({
 	},
 	methods: {
 		changeStatus(i) {
-			console.log("click!", i);
-			
 			if(this.todo[i].done){
 				this.todo[i].done = false;
 			} else {
 				this.todo[i].done = true;
 			}
+		},
+
+		remove(i) {
+			console.log("click!");
+			this.todo.splice(this.todo[i], 1 );
 		}
 	},
 	mounted() {
