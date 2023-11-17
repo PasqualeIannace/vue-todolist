@@ -35,7 +35,8 @@ createApp({
 		},
 		// aggiungo pulsante elimina
 		remove(i) {
-			this.todo.splice( this.todo, 1 );
+			console.log("Elemento in posizione: ", this.todo[i] );
+			this.todo.splice( i, 1 );
 		},
 		// aggiungo elementi
 		addElement(element) {
