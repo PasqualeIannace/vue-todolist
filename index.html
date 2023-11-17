@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello VUE JS</title>
+    <title>ToDo</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     <div id="app">
-        {{ message }}
+        <h1>ToDo List</h1>
+        <ul>
+            <li v-for="(item, i) in todo" :key="i" :class="{ lineT: todo[i].done }">
+               <input type="checkbox" name="" id="" @click="changeStatus(i)"> {{ item.text }}
+            </li>
+        </ul>
     </div>
 
     
