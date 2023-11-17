@@ -20,12 +20,12 @@ createApp({
 					text: "Allenamento",
 					done: false
 				}
-			]
-
-			
+			]			
 		}
 	},
+
 	methods: {
+		// sbarro gli elementi cliccati
 		changeStatus(i) {
 			if(this.todo[i].done){
 				this.todo[i].done = false;
@@ -33,15 +33,21 @@ createApp({
 				this.todo[i].done = true;
 			}
 		},
-
+		// aggiungo pulsante elimina
 		remove(i) {
-			console.log("click!");
-			this.todo.splice(this.todo[i], 1 );
+			this.todo.splice( this.todo, 1 );
+		},
+		// aggiungo elementi
+		addElement(element) {
+			console.log("click!", element);
+            element = { text: element, done: false };
+			this.todo.push(element);
+			this.myInput = "";
 		}
 	},
+
 	mounted() {
-        console.log(`Pagina caricata`);
-        console.log(this.todo);
+
     },
 }).mount('#app')
 

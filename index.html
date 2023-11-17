@@ -18,6 +18,9 @@
                 {{ item.text }}
             </li>
         </ul>
+        <h3>Aggiungi elementi alla lista</h3>
+        <input type="text" v-model="myInput">
+        <button @click="addElement(myInput)">Invia</button>
     </div>
 
     
