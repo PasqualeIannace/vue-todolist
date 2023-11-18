@@ -35,12 +35,10 @@ createApp({
 		},
 		// aggiungo pulsante elimina
 		remove(i) {
-			console.log("Elemento in posizione: ", this.todo[i] );
 			this.todo.splice( i, 1 );
 		},
 		// aggiungo elementi
 		addElement(element) {
-			console.log("click!", element);
             element = { text: element, done: false };
 			this.todo.push(element);
 			this.myInput = "";

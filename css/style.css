@@ -6,8 +6,54 @@
 
 body {
     font-family: sans-serif;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    height: 100vh;
+}
+
+h1 {
+    color: #F9BC2F;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+h3 {
+    color: #F9BC2F;
+    margin: 1em 0 0.5em 0;
+}
+
+li {
+    list-style-type:none
+}
+
+button {
+    background: transparent;
+    border-radius: 0.8em;
+    margin-left: 0.5em;
+    border: 5px solid #FBBB2F;
+    padding: 0.4em;
 }
 
 .lineT {
     text-decoration: line-through;
+}
+
+#app {
+    margin: 3em auto;
+    width: 80vh;
+    padding: 2em;
+    background: radial-gradient(circle, rgba(63,237,251,1) 0%, rgba(220,252,70,1) 100%);
+    border-radius: 2em;
+}
+
+li input {
+    margin: 1em 0.1em 0 0.7em;
+}
+
+.inputText {
+    padding: 0.5em;
+    background: border-box;
+    border-radius: 0.8em;
+    border: 3px solid #FBBB2F;
 }
