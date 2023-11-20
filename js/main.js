@@ -20,8 +20,10 @@ createApp({
 					text: "Allenamento",
 					done: false
 				}
-			]			
-		}
+			],
+
+			myInput : "",			
+		}		
 	},
 
 	methods: {
@@ -38,8 +40,8 @@ createApp({
 			this.todo.splice( i, 1 );
 		},
 		// aggiungo elementi
-		addElement(element) {
-            element = { text: element, done: false };
+		addElement() {
+			let element = { text : this.myInput, done: false };	
 			this.todo.push(element);
 			this.myInput = "";
 		}
